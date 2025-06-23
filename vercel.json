@@ -1,14 +1,22 @@
 {
   "cleanUrls": true,
-  "headers": [
+  "trailingSlash": false,
+  "routes": [
     {
-      "source": "/.well-known/(.*)",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/plain"
-        }
-      ]
+      "src": "/.well-known/(.*)",
+      "dest": "/.well-known/$1"
+    },
+    {
+      "src": "/privacy/(.*)",
+      "dest": "/privacy/$1"
+    },
+    {
+      "src": "/terms/(.*)",
+      "dest": "/terms/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
