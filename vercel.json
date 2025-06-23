@@ -1,1 +1,6 @@
-{ "rewrites": [ { "source": "/(.*)", "destination": "/$1" } ] }
+{
+  "rewrites": [
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/privacy", "destination": "/privacy.html" }
+  ]
+}
