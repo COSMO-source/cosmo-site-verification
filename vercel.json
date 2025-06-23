@@ -1,22 +1,15 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "routes": [
+  "headers": [
     {
-      "src": "/.well-known/(.*)",
-      "dest": "/.well-known/$1"
-    },
-    {
-      "src": "/privacy/(.*)",
-      "dest": "/privacy/$1"
-    },
-    {
-      "src": "/terms/(.*)",
-      "dest": "/terms/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/.well-known/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=0"
+        }
+      ]
     }
   ]
 }
