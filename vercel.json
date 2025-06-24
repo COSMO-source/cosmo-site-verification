@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/.well-known/tiktok-developers-site-verification.txt",
+      "destination": "/well-known/tiktok-developers-site-verification.txt"
+    }
+  ]
+}
